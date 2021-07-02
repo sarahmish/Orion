@@ -128,20 +128,4 @@ Additional resources that might be of interest:
 * Learn about [benchmarking pipelines](BENCHMARK.md).
 * Read about [pipeline evaluation](orion/evaluation/README.md).
 * More about [database design](DATABASE.md).
-* Find out more about [TadGAN](https://arxiv.org/pdf/2009.07769v3.pdf).
 
-# Citation
-
-If you use **Orion** for your research, please consider citing the following paper:
-
-Alexander Geiger, Dongyu Liu, Sarah Alnegheimish, Alfredo Cuesta-Infante, Kalyan Veeramachaneni. [TadGAN - Time Series Anomaly Detection Using Generative Adversarial Networks](https://arxiv.org/pdf/2009.07769v3.pdf).
-
-```
-@inproceedings{geiger2020tadgan,
-  title={TadGAN: Time Series Anomaly Detection Using Generative Adversarial Networks},
-  author={Geiger, Alexander and Liu, Dongyu and Alnegheimish, Sarah and Cuesta-Infante, Alfredo and Veeramachaneni, Kalyan},
-  booktitle={2020 IEEE International Conference on Big Data (IEEE BigData)},
-  organization={IEEE},
-  year={2020}
-}
-```
