@@ -4,11 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pipelines &#8212; Orion 0.2.1.dev0 documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Pipelines &#8212; Orion 0.6.2.dev0 documentation</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet">
-  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -20,12 +20,16 @@
 
     
       
+  <link rel="stylesheet"
+    href="../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" href="../../_static/css/blank.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <link rel="preload" as="script" href="../../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -39,90 +43,63 @@
     <link rel="next" title="Evaluation" href="../evaluation_doc.html" />
     <link rel="prev" title="find anomalies" href="primitives/find_anomalies.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+    <meta name="docsearch:language" content="en" />
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
-    <div class="container-fluid" id="banner"></div>
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
+<div class="container-xl">
 
+    <a class="navbar-brand" href="../../index.html">
     
-    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
-
-  <div id="navbar-start">
+      <p class="title">Orion</p>
     
-    
-<a class="navbar-brand" href="../../index.html">
-<p class="title">Orion</p>
-</a>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-    
-  </div>
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  
-  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
-    <div id="navbar-center" class="mr-auto">
-      
-      <div class="navbar-center-item">
-        <ul id="navbar-main-elements" class="navbar-nav">
-    <li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../../getting_started/index.html">
-  Getting Started
- </a>
-</li>
-
-<li class="toctree-l1 current active nav-item">
- <a class="reference internal nav-link" href="../index.html">
-  User Guides
- </a>
-</li>
-
-<li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../../api_reference/index.html">
-  API Reference
- </a>
-</li>
-
-<li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../../developer_guides/index.html">
-  Developer Guides
- </a>
-</li>
-
-<li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../../history.html">
-  Release Notes
- </a>
-</li>
-
-    
-</ul>
-      </div>
-      
-    </div>
-
-    <div id="navbar-end">
-      
-      <div class="navbar-end-item">
-        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/signals-dev/Orion" rel="noopener" target="_blank" title="GitHub">
-            <span><i class="fab fa-github-square"></i></span>
-            <label class="sr-only">GitHub</label>
-          </a>
+    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+        
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../getting_started/index.html">Getting Started</a>
         </li>
+        
+        <li class="nav-item active">
+            <a class="nav-link" href="../index.html">User Guides</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../api_reference/index.html">API Reference</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../developer_guides/index.html">Developer Guides</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../history.html">Release Notes</a>
+        </li>
+        
+        
       </ul>
-      </div>
+
+
       
+
+      <ul class="navbar-nav">
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/sintel-dev/Orion" target="_blank" rel="noopener">
+              <span><i class="fab fa-github-square"></i></span>
+            </a>
+          </li>
+        
+        
+      </ul>
     </div>
-  </div>
 </div>
     </nav>
     
@@ -130,241 +107,161 @@
     <div class="container-xl">
       <div class="row">
           
-            
-            <!-- Only show if we have sidebars configured, else just a small margin  -->
-            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+          <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  <div class="bd-toc-item active">
-    <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../data.html">
-   Data
-  </a>
- </li>
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="index.html">
-   Primitives and Pipelines
-  </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="current">
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="primitives.html">
-     Primitives
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-    <label for="toctree-checkbox-2">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives/time_segments_aggregate.html">
-       time segments aggregate
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives/intervals_to_mask.html">
-       intervals to mask
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives/rolling_window_sequences.html">
-       rolling window sequence
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives/fillna.html">
-       fillna
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives/SimpleImputer.html">
-       SimpleImputer
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives/MinMaxScaler.html">
-       MinMaxScaler
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives/arima.html">
-       ARIMA
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives/LSTMTimeSeriesRegressor.html">
-       LSTM
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives/LSTMSeq2Seq.html">
-       LSTM AE
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives/DenseSeq2Seq.html">
-       Dense AE
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives/TadGAN.html">
-       TadGAN
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives/score_anomalies.html">
-       score anomalies
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives/reconstruction_errors.html">
-       reconstuction errors
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives/regression_errors.html">
-       regression errors
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives/find_anomalies.html">
-       find anomalies
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     Pipelines
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../evaluation_doc.html">
-   Evaluation
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../benchmarking.html">
-   Benchmarking
-  </a>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../system/index.html">
-   Building a System
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../system/database.html">
-     Database Schema
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../system/api.html">
-     API
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../system/interface.html">
-     User Interface
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
 
-  </div>
-</nav>
-            </div>
+    <div class="bd-toc-item active">
+    
+  
+    <ul class="nav bd-sidenav">
+        
+        
+        
+        
+          
             
+                <li class="">
+                    <a href="../data.html">Data</a>
+                </li>
+            
+          
+            
+  
+                <li class="active">
+                    <a href="index.html">Primitives and Pipelines</a>
+                    <ul>
+                    
+                        <li class="">
+                            <a href="primitives.html">Primitives</a>
+                        </li>
+                    
+                        <li class="active">
+                            <a href="">Pipelines</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../evaluation_doc.html">Evaluation</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../benchmarking.html">Benchmarking</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../system/index.html">Building a System</a>
+                </li>
+            
+          
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+  
+  </nav>
+          </div>
           
 
           
           <div class="d-none d-xl-block col-xl-2 bd-toc">
-            
               
-              <div class="toc-item">
-                
 <div class="tocsection onthispage pt-5 pb-3">
     <i class="fas fa-list"></i> On this page
 </div>
 
 <nav id="bd-toc-nav">
-    <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pipeline-representation">
-   Pipeline Representation
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#current-available-pipelines">
-   Current Available Pipelines
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pipeline-storage">
-   Pipeline Storage
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#verified-pipelines">
-   Verified Pipelines
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pipelines-for-custom-data">
-   Pipelines for Custom Data
-  </a>
- </li>
-</ul>
-
-</nav>
-              </div>
-              
-              <div class="toc-item">
+    <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#pipeline-representation" class="nav-link">Pipeline Representation</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#current-available-pipelines" class="nav-link">Current Available Pipelines</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#pipeline-storage" class="nav-link">Pipeline Storage</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#verified-pipelines" class="nav-link">Verified Pipelines</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#pipelines-for-custom-data" class="nav-link">Pipelines for Custom Data</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#creating-pipelines" class="nav-link">Creating Pipelines</a><ul class="nav section-nav flex-column">
                 
-              </div>
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#block-1-primitives" class="nav-link">Block 1: Primitives</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#block-2-initialization-parameters" class="nav-link">Block 2: Initialization Parameters</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#block-3-input-names" class="nav-link">Block 3: Input Names</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#block-4-output-names" class="nav-link">Block 4: Output Names</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#contributing-a-pipeline" class="nav-link">Contributing a Pipeline</a>
+        </li>
+    
+    </ul>
+</nav>
+
+
               
-            
           </div>
           
 
-          
-          
-            
           
           <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
               
               <div>
                 
-  <div class="section" id="pipelines">
+  <section id="pipelines">
 <span id="id1"></span><h1>Pipelines<a class="headerlink" href="#pipelines" title="Permalink to this headline">¶</a></h1>
 <p>The main component in the Orion project are the <strong>Orion Pipelines</strong>, which consist of <a class="reference external" href="https://mlbazaar.github.io/MLBlocks/advanced_usage/pipelines.html">MLBlocks Pipelines</a> specialized in detecting anomalies in time series.</p>
 <p>As <code class="docutils literal notranslate"><span class="pre">MLPipeline</span></code> instances, <strong>Orion Pipelines</strong>:</p>
 <ul class="simple">
-<li><p>consist of a list of one or more <a class="reference external" href="https://mlbazaar.github.io/MLPrimitives/">MLPrimitives</a></p></li>
+<li><p>consist of a list of one or more <a class="reference external" href="https://sintel-dev.github.io/ml-stars/">mlstars</a></p></li>
 <li><p>can be <em>fitted</em> on some data and later on used to <em>predict</em> anomalies on more data</p></li>
 <li><p>can be <em>scored</em> by comparing their predictions with some known anomalies</p></li>
 <li><p>have <em>hyperparameters</em> that can be <em>tuned</em> to improve their anomaly detection performance</p></li>
 <li><p>can be stored as a JSON file that includes all the primitives that compose them, as well as other required configuration options.</p></li>
 </ul>
-<div class="section" id="pipeline-representation">
+<section id="pipeline-representation">
 <h2>Pipeline Representation<a class="headerlink" href="#pipeline-representation" title="Permalink to this headline">¶</a></h2>
 <p>As previously mentioned, a pipeline is composed of a sequence of <a class="reference internal" href="primitives.html#primitives"><span class="std std-ref">Primitives</span></a>. In Orion, we store pipelines as annotated <strong>JSON</strong> files.
-Let’s view the structure of a pipeline JSON for anomaly detection in <a class="reference external" href="https://github.com/signals-dev/Orion/tree/master/orion/pipelines">orion/pipelines</a>. For example let’s consider the <a class="reference external" href="https://github.com/signals-dev/Orion/blob/master/orion/pipelines/verified/arima/arima.json">ARIMA</a> pipeline. There are four main categories defined in the JSON:</p>
+Let’s view the structure of a pipeline JSON for anomaly detection in <a class="reference external" href="https://github.com/sintel-dev/Orion/tree/master/orion/pipelines">orion/pipelines</a>. For example let’s consider the <a class="reference external" href="https://github.com/sintel-dev/Orion/blob/master/orion/pipelines/verified/arima/arima.json">ARIMA</a> pipeline. There are four main categories defined in the JSON:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="s2">&quot;primitives&quot;</span><span class="p">:</span> <span class="p">[</span>
         <span class="o">...</span>
@@ -408,8 +305,8 @@ Let’s view the structure of a pipeline JSON for anomaly detection in <a class=
 </div>
 <p>Then <code class="docutils literal notranslate"><span class="pre">orion.detect(..,</span> <span class="pre">visualization=True)</span></code> will return two outputs: the first output being the detected anomalies, and the second output is a dictionary containing the specified outputs in <code class="docutils literal notranslate"><span class="pre">visualization</span></code>. You can read more about the specifications of <a class="reference internal" href="../../api_reference/orion.html#orion"><span class="std std-ref">orion</span></a> API.</p>
 <p>To read more about the intricacies of composing a pipeline, please refer to <a class="reference external" href="https://mlbazaar.github.io/MLBlocks/advanced_usage/pipelines.html">MLBlocks Pipelines</a>.</p>
-</div>
-<div class="section" id="current-available-pipelines">
+</section>
+<section id="current-available-pipelines">
 <h2>Current Available Pipelines<a class="headerlink" href="#current-available-pipelines" title="Permalink to this headline">¶</a></h2>
 <p>In the <strong>Orion Project</strong>, the pipelines are included as <strong>JSON</strong> files, which can be found
 in the subdirectories inside the <code class="docutils literal notranslate"><span class="pre">orion/pipelines</span></code> folder.</p>
@@ -441,13 +338,19 @@ in the subdirectories inside the <code class="docutils literal notranslate"><spa
 <tr class="row-odd"><td><p>Dense AE</p></td>
 <td><p>Autoencoder based pipeline with Dense layers</p></td>
 </tr>
+<tr class="row-even"><td><p>VAE</p></td>
+<td><p>Variational autoencoder</p></td>
+</tr>
+<tr class="row-odd"><td><p>AER</p></td>
+<td><p>Autoencoder with Regression based pipeline</p></td>
+</tr>
 <tr class="row-even"><td><p>Azure</p></td>
 <td><p>Azure API for <a class="reference external" href="https://azure.microsoft.com/en-us/services/cognitive-services/anomaly-detector/">Anomaly Detector</a></p></td>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="pipeline-storage">
+</section>
+<section id="pipeline-storage">
 <h2>Pipeline Storage<a class="headerlink" href="#pipeline-storage" title="Permalink to this headline">¶</a></h2>
 <p>For each pipeline, there is a dedicated folder that stores:
 * the pipeline itself
@@ -465,8 +368,8 @@ in the subdirectories inside the <code class="docutils literal notranslate"><spa
 <p class="admonition-title">Note</p>
 <p>the pipeline name must follow the subfolder name.</p>
 </div>
-</div>
-<div class="section" id="verified-pipelines">
+</section>
+<section id="verified-pipelines">
 <h2>Verified Pipelines<a class="headerlink" href="#verified-pipelines" title="Permalink to this headline">¶</a></h2>
 <p>In <strong>Orion</strong>, we organize pipelines into <em>verified</em> and <em>sandbox</em>. The distinction between verified and sandbox is kept until several tests and verifications are made. We consider two cases when pipelines are inspected before transferring:</p>
 <ul class="simple">
@@ -476,8 +379,8 @@ in the subdirectories inside the <code class="docutils literal notranslate"><spa
 <p>In both of these cases, the user is expected to open a new <em>PR</em> and pass tests before considering its merge and storage in sandbox.
 Next, we test the new pipeline/hyperparameters in the benchmark and verify that they perform as expected and indicated by the user. Once these checks have passed, we make the transfer.</p>
 <p>To know more about our process in contributing and testing, read our <a class="reference internal" href="../../developer_guides/contributing.html#contributing"><span class="std std-ref">Contributing</span></a> guidelines and <a class="reference internal" href="../benchmarking.html#benchmarking"><span class="std std-ref">Benchmarking</span></a>.</p>
-</div>
-<div class="section" id="pipelines-for-custom-data">
+</section>
+<section id="pipelines-for-custom-data">
 <h2>Pipelines for Custom Data<a class="headerlink" href="#pipelines-for-custom-data" title="Permalink to this headline">¶</a></h2>
 <p>To use a pipeline on your own data, first you need to make sure that it follows the data format described in <a class="reference internal" href="../data.html#data"><span class="std std-ref">Data</span></a>. Additionally, some hyperparameter changes in the pipeline might be necessary.</p>
 <p>Since pipelines are composed of <a class="reference internal" href="primitives.html#primitives"><span class="std std-ref">Primitives</span></a>, you can discover the interpretation of each hyperparameter by visiting the primitive’s documentation. One of the most used primitives is <code class="docutils literal notranslate"><span class="pre">time_segments_aggregate</span></code> which makes your signal equi-spaced. You need to set the <code class="docutils literal notranslate"><span class="pre">interval</span></code> hyperparameter to the frequency of your data. For example, if your data has a frequency of 5 minutes then <code class="docutils literal notranslate"><span class="pre">interval=300</span></code> would be most appropriate since we are dealing with second intervals. A hands on example is shown here:</p>
@@ -494,7 +397,7 @@ Next, we test the new pipeline/hyperparameters in the benchmark and verify that 
 <span class="gp">   ...: </span>
 
 <span class="gp">In [6]: </span><span class="n">hyperparameters</span> <span class="o">=</span> <span class="p">{</span>
-<span class="gp">   ...: </span>    <span class="s2">&quot;mlprimitives.custom.timeseries_preprocessing.time_segments_aggregate#1&quot;</span><span class="p">:</span> <span class="p">{</span>
+<span class="gp">   ...: </span>    <span class="s2">&quot;mlstars.custom.timeseries_preprocessing.time_segments_aggregate#1&quot;</span><span class="p">:</span> <span class="p">{</span>
 <span class="gp">   ...: </span>        <span class="s2">&quot;interval&quot;</span><span class="p">:</span> <span class="mi">300</span>
 <span class="gp">   ...: </span>    <span class="p">},</span>
 <span class="gp">   ...: </span>    <span class="s1">&#39;keras.Sequential.LSTMTimeSeriesRegressor#1&#39;</span><span class="p">:</span> <span class="p">{</span>
@@ -511,91 +414,167 @@ Next, we test the new pipeline/hyperparameters in the benchmark and verify that 
 <span class="gp">   ...: </span>
 
 <span class="gp">In [8]: </span><span class="n">orion</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">custom_data</span><span class="p">)</span>
-<span class="go">Train on 200 samples, validate on 50 samples</span>
 <span class="go">Epoch 1/5</span>
 
-<span class="go"> 64/200 [========&gt;.....................] - ETA: 2s - loss: 0.4166 - mse: 0.4166</span>
-<span class="go">128/200 [==================&gt;...........] - ETA: 1s - loss: 0.3906 - mse: 0.3906</span>
-<span class="go">192/200 [===========================&gt;..] - ETA: 0s - loss: 0.3967 - mse: 0.3967</span>
-<span class="go">200/200 [==============================] - 3s 14ms/step - loss: 0.3949 - mse: 0.3949 - val_loss: 0.4182 - val_mse: 0.4182</span>
+<span class="go">1/4 [======&gt;.......................] - ETA: 8s - loss: 0.3966 - mse: 0.3966</span>
+<span class="go">2/4 [==============&gt;...............] - ETA: 0s - loss: 0.3821 - mse: 0.3821</span>
+<span class="go">3/4 [=====================&gt;........] - ETA: 0s - loss: 0.3957 - mse: 0.3957</span>
+<span class="go">4/4 [==============================] - ETA: 0s - loss: 0.3992 - mse: 0.3992</span>
+<span class="go">4/4 [==============================] - 4s 513ms/step - loss: 0.3992 - mse: 0.3992 - val_loss: 0.4215 - val_mse: 0.4215</span>
 <span class="go">Epoch 2/5</span>
 
-<span class="go"> 64/200 [========&gt;.....................] - ETA: 1s - loss: 0.3894 - mse: 0.3894</span>
-<span class="go">128/200 [==================&gt;...........] - ETA: 0s - loss: 0.4189 - mse: 0.4189</span>
-<span class="go">192/200 [===========================&gt;..] - ETA: 0s - loss: 0.4003 - mse: 0.4003</span>
-<span class="go">200/200 [==============================] - 2s 10ms/step - loss: 0.3926 - mse: 0.3926 - val_loss: 0.4222 - val_mse: 0.4222</span>
+<span class="go">1/4 [======&gt;.......................] - ETA: 1s - loss: 0.3630 - mse: 0.3630</span>
+<span class="go">2/4 [==============&gt;...............] - ETA: 0s - loss: 0.3787 - mse: 0.3787</span>
+<span class="go">3/4 [=====================&gt;........] - ETA: 0s - loss: 0.3879 - mse: 0.3879</span>
+<span class="go">4/4 [==============================] - ETA: 0s - loss: 0.3909 - mse: 0.3909</span>
+<span class="go">4/4 [==============================] - 1s 342ms/step - loss: 0.3909 - mse: 0.3909 - val_loss: 0.4216 - val_mse: 0.4216</span>
 <span class="go">Epoch 3/5</span>
 
-<span class="go"> 64/200 [========&gt;.....................] - ETA: 1s - loss: 0.3753 - mse: 0.3753</span>
-<span class="go">128/200 [==================&gt;...........] - ETA: 0s - loss: 0.4022 - mse: 0.4022</span>
-<span class="go">192/200 [===========================&gt;..] - ETA: 0s - loss: 0.3938 - mse: 0.3938</span>
-<span class="go">200/200 [==============================] - 2s 10ms/step - loss: 0.3922 - mse: 0.3922 - val_loss: 0.4230 - val_mse: 0.4230</span>
+<span class="go">1/4 [======&gt;.......................] - ETA: 1s - loss: 0.3789 - mse: 0.3789</span>
+<span class="go">2/4 [==============&gt;...............] - ETA: 0s - loss: 0.4180 - mse: 0.4180</span>
+<span class="go">3/4 [=====================&gt;........] - ETA: 0s - loss: 0.4013 - mse: 0.4013</span>
+<span class="go">4/4 [==============================] - ETA: 0s - loss: 0.3914 - mse: 0.3914</span>
+<span class="go">4/4 [==============================] - 1s 346ms/step - loss: 0.3914 - mse: 0.3914 - val_loss: 0.4210 - val_mse: 0.4210</span>
 <span class="go">Epoch 4/5</span>
 
-<span class="go"> 64/200 [========&gt;.....................] - ETA: 1s - loss: 0.3836 - mse: 0.3836</span>
-<span class="go">128/200 [==================&gt;...........] - ETA: 0s - loss: 0.3858 - mse: 0.3858</span>
-<span class="go">192/200 [===========================&gt;..] - ETA: 0s - loss: 0.3894 - mse: 0.3894</span>
-<span class="go">200/200 [==============================] - 2s 10ms/step - loss: 0.3932 - mse: 0.3932 - val_loss: 0.4203 - val_mse: 0.4203</span>
+<span class="go">1/4 [======&gt;.......................] - ETA: 1s - loss: 0.4554 - mse: 0.4554</span>
+<span class="go">2/4 [==============&gt;...............] - ETA: 0s - loss: 0.3905 - mse: 0.3905</span>
+<span class="go">3/4 [=====================&gt;........] - ETA: 0s - loss: 0.3997 - mse: 0.3997</span>
+<span class="go">4/4 [==============================] - ETA: 0s - loss: 0.3926 - mse: 0.3926</span>
+<span class="go">4/4 [==============================] - 1s 347ms/step - loss: 0.3926 - mse: 0.3926 - val_loss: 0.4194 - val_mse: 0.4194</span>
 <span class="go">Epoch 5/5</span>
 
-<span class="go"> 64/200 [========&gt;.....................] - ETA: 1s - loss: 0.3807 - mse: 0.3807</span>
-<span class="go">128/200 [==================&gt;...........] - ETA: 0s - loss: 0.3947 - mse: 0.3947</span>
-<span class="go">192/200 [===========================&gt;..] - ETA: 0s - loss: 0.3878 - mse: 0.3878</span>
-<span class="go">200/200 [==============================] - 2s 10ms/step - loss: 0.3957 - mse: 0.3957 - val_loss: 0.4183 - val_mse: 0.4183</span>
-
-<span class="go"> 64/250 [======&gt;.......................] - ETA: 1s</span>
-<span class="go">128/250 [==============&gt;...............] - ETA: 0s</span>
-<span class="go">192/250 [======================&gt;.......] - ETA: 0s</span>
-<span class="go">250/250 [==============================] - 1s 3ms/step</span>
+<span class="go">1/4 [======&gt;.......................] - ETA: 1s - loss: 0.3779 - mse: 0.3779</span>
+<span class="go">2/4 [==============&gt;...............] - ETA: 0s - loss: 0.4342 - mse: 0.4342</span>
+<span class="go">3/4 [=====================&gt;........] - ETA: 0s - loss: 0.4028 - mse: 0.4028</span>
+<span class="go">4/4 [==============================] - ETA: 0s - loss: 0.3956 - mse: 0.3956</span>
+<span class="go">4/4 [==============================] - 1s 343ms/step - loss: 0.3956 - mse: 0.3956 - val_loss: 0.4187 - val_mse: 0.4187</span>
 </pre></div>
 </div>
+</section>
+<section id="creating-pipelines">
+<h2>Creating Pipelines<a class="headerlink" href="#creating-pipelines" title="Permalink to this headline">¶</a></h2>
+<p>A <strong>Pipeline</strong> is a sequence of primitives that perform a number of operations to the given input to produce a desired output. In Orion, the pipeline takes a signal as input and produces a list of detected anomalies as output.</p>
+<p>To create an Orion pipeline, we need to assemble a JSON representation of the pipeline. The representation contains four blocks mentioned above:</p>
+<ol class="arabic simple">
+<li><p><em>primitives</em></p></li>
+<li><p><em>init_params</em></p></li>
+<li><p><em>input_names</em></p></li>
+<li><p><em>output_names</em></p></li>
+</ol>
+<p>Let’s visit one of the existing Orion pipelines to help understand how it is working, as an example we will work with the <code class="docutils literal notranslate"><span class="pre">lstm_dynamic_threshold</span></code> <a class="reference external" href="https://github.com/sintel-dev/Orion/blob/master/orion/pipelines/verified/lstm_dynamic_threshold/lstm_dynamic_threshold.json">pipeline</a>.</p>
+<section id="block-1-primitives">
+<h3>Block 1: Primitives<a class="headerlink" href="#block-1-primitives" title="Permalink to this headline">¶</a></h3>
+<p>The first block in the pipeline JSON is a list containing the sequence of primitives applied to the signal in order to produce a list of detected anomalies.</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="nt">&quot;primitives&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;mlstars.custom.timeseries_preprocessing.time_segments_aggregate&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;sklearn.impute.SimpleImputer&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;sklearn.preprocessing.MinMaxScaler&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;mlstars.custom.timeseries_preprocessing.rolling_window_sequences&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;keras.Sequential.LSTMTimeSeriesRegressor&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;orion.primitives.timeseries_errors.regression_errors&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;orion.primitives.timeseries_anomalies.find_anomalies&quot;</span>
+<span class="p">]</span>
+</pre></div>
 </div>
+<p>The primitive <code class="docutils literal notranslate"><span class="pre">time_segments_aggregate</span></code> takes a raw signal to produce another signal where
+the time intervals between each sample and another is equal. Then the pipeline uses <code class="docutils literal notranslate"><span class="pre">SimpleImputer</span></code> to impute missing values in the signal with the mean value. Next, the pipeline scale the data into the range <code class="docutils literal notranslate"><span class="pre">[-1,</span> <span class="pre">1]</span></code> using <code class="docutils literal notranslate"><span class="pre">MinMaxScaler</span></code>. After that, <code class="docutils literal notranslate"><span class="pre">rolling_window_sequences</span></code> create the training window sequences for the model. The
+processed signal is now ready to train the double-stacked LSTM network through <code class="docutils literal notranslate"><span class="pre">LSTMTimeSeriesRegressor</span></code> primitive. Once the network is trained, we generate the predicted signal and compute the discrepancies (error) using <code class="docutils literal notranslate"><span class="pre">regression_errors</span></code>, which
+is an absolute point-wise difference. Lastly, we use <code class="docutils literal notranslate"><span class="pre">find_anomalies</span></code> on error values to find anomalous regions.</p>
+<p>Customizing pipelines and swapping one primitive with another can be done by changing and adding primitives in this block.</p>
+</section>
+<section id="block-2-initialization-parameters">
+<h3>Block 2: Initialization Parameters<a class="headerlink" href="#block-2-initialization-parameters" title="Permalink to this headline">¶</a></h3>
+<p>The second block in the pipeline JSON is a dictionary of primitive names and their associated initialized parameters.</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="nt">&quot;init_params&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;mlstars.custom.timeseries_preprocessing.time_segments_aggregate#1&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;time_column&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;timestamp&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;interval&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">21600</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;method&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mean&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;sklearn.preprocessing.MinMaxScaler#1&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;feature_range&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="mi">-1</span><span class="p">,</span>
+<span class="w">            </span><span class="mi">1</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;mlstars.custom.timeseries_preprocessing.rolling_window_sequences#1&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;target_column&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;window_size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">250</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;keras.Sequential.LSTMTimeSeriesRegressor&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;epochs&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">35</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;orion.primitives.timeseries_anomalies.find_anomalies#1&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;window_size_portion&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.33</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;window_step_size_portion&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.1</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;fixed_threshold&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
 </div>
+<p>For example, in <code class="docutils literal notranslate"><span class="pre">time_segments_aggregate</span></code> we are marking that the interval between one sample and another in the signal is 6 hours which is 21600. Another example is that the <code class="docutils literal notranslate"><span class="pre">LSTMTimeSeriesRegressor</span></code> model is trained for 35 epochs.</p>
+<p>If the parameters are not present in this block, the default value in the original primitive JSON file will be used. For example if the interval was not specified, then it will use the default value (which is 3600) that is defined in the original <a class="reference external" href="https://github.com/sintel-dev/ml-stars/blob/master/mlstars/primitives/mlstars.custom.timeseries_preprocessing.time_segments_aggregate.json">primitive</a>.</p>
+</section>
+<section id="block-3-input-names">
+<h3>Block 3: Input Names<a class="headerlink" href="#block-3-input-names" title="Permalink to this headline">¶</a></h3>
+<p>Block three is used for mapping name of argument to existing variables. Recall that primitives define input arguments and outputs. These variables names are how the pipeline knows which primitive uses which variables.</p>
+<p>Sometimes we need to change the names of these input arguments to find the correct variable.</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="nt">&quot;input_names&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;orion.primitives.timeseries_anomalies.find_anomalies#1&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;index&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;target_index&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Here the pipeline changes the input argument <code class="docutils literal notranslate"><span class="pre">index</span></code> to <code class="docutils literal notranslate"><span class="pre">target_index</span></code> which is basically denoting that the input <code class="docutils literal notranslate"><span class="pre">index</span></code> will now be the output <code class="docutils literal notranslate"><span class="pre">target_index</span></code> of a previous primitive which is the <a class="reference external" href="https://github.com/sintel-dev/ml-stars/blob/master/mlstars/primitives/mlstars.custom.timeseries_preprocessing.rolling_window_sequences.json">rolling_window_sequences</a> primitive.</p>
+</section>
+<section id="block-4-output-names">
+<h3>Block 4: Output Names<a class="headerlink" href="#block-4-output-names" title="Permalink to this headline">¶</a></h3>
+<p>Similarly to input names, sometimes we need to change output names, which is what the pipeline specifies in block four.</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="nt">&quot;output_names&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;keras.Sequential.LSTMTimeSeriesRegressor#1&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;y&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;y_hat&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Here we change the output of the primitive <code class="docutils literal notranslate"><span class="pre">LSTMTimeSeriesRegressor</span></code> from <code class="docutils literal notranslate"><span class="pre">y</span></code> to <code class="docutils literal notranslate"><span class="pre">y_hat</span></code> in order not to override the existing value of <code class="docutils literal notranslate"><span class="pre">y</span></code> and also to prepare it as input for the next primitive <a class="reference external" href="https://github.com/sintel-dev/Orion/blob/master/orion/primitives/jsons/orion.primitives.timeseries_errors.regression_errors.json">regression_errors</a>.</p>
+</section>
+</section>
+<section id="contributing-a-pipeline">
+<h2>Contributing a Pipeline<a class="headerlink" href="#contributing-a-pipeline" title="Permalink to this headline">¶</a></h2>
+<p>To add a new pipeline to Orion, follow the same steps mentioned in <a class="reference internal" href="../../developer_guides/int_benchmark.html#int-benchmark"><span class="std std-ref">Contributing to Orion Benchmark</span></a> page.</p>
+</section>
+</section>
 
 
               </div>
               
               
-              <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="primitives/find_anomalies.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">find anomalies</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="../evaluation_doc.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Evaluation</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
-</div>
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="primitives/find_anomalies.html" title="previous page">find anomalies</a>
+    <a class='right-next' id="next-link" href="../evaluation_doc.html" title="next page">Evaluation</a>
+
+              </div>
               
           </main>
           
 
       </div>
     </div>
-  
-  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
-<footer class="footer mt-5 mt-md-0">
+
+    
+  <script src="../../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    <footer class="footer mt-5 mt-md-0">
   <div class="container">
-    
-    <div class="footer-item">
-      <p class="copyright">
-    &copy; Copyright 2018, MIT Data To AI Lab.<br>
-</p>
-    </div>
-    
-    <div class="footer-item">
-      <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br>
-</p>
-    </div>
-    
+    <p>
+          &copy; Copyright 2018, MIT Data To AI Lab.<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br/>
+    </p>
   </div>
 </footer>
   </body>

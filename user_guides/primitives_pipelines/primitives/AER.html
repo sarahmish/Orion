@@ -1,0 +1,525 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>AER &#8212; Orion 0.6.2.dev0 documentation</title>
+    
+  <link rel="stylesheet" href="../../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+  <link rel="preload" as="script" href="../../../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="VAE" href="VAE.html" />
+    <link rel="prev" title="TadGAN" href="TadGAN.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
+<div class="container-xl">
+
+    <a class="navbar-brand" href="../../../index.html">
+    
+      <p class="title">Orion</p>
+    
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+        
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../../getting_started/index.html">Getting Started</a>
+        </li>
+        
+        <li class="nav-item active">
+            <a class="nav-link" href="../../index.html">User Guides</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../../api_reference/index.html">API Reference</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../../developer_guides/index.html">Developer Guides</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../../history.html">Release Notes</a>
+        </li>
+        
+        
+      </ul>
+
+
+      
+
+      <ul class="navbar-nav">
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/sintel-dev/Orion" target="_blank" rel="noopener">
+              <span><i class="fab fa-github-square"></i></span>
+            </a>
+          </li>
+        
+        
+      </ul>
+    </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+          <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+
+    <div class="bd-toc-item active">
+    
+  
+    <ul class="nav bd-sidenav">
+        
+        
+        
+        
+          
+            
+                <li class="">
+                    <a href="../../data.html">Data</a>
+                </li>
+            
+          
+            
+  
+                <li class="active">
+                    <a href="../index.html">Primitives and Pipelines</a>
+                    <ul>
+                    
+                        <li class="active">
+                            <a href="../primitives.html">Primitives</a>
+                        </li>
+                    
+                        <li class="">
+                            <a href="../pipelines.html">Pipelines</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../../evaluation_doc.html">Evaluation</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../../benchmarking.html">Benchmarking</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../../system/index.html">Building a System</a>
+                </li>
+            
+          
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+  
+  </nav>
+          </div>
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+              
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+    </ul>
+</nav>
+
+
+              
+          </div>
+          
+
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <section id="aer">
+<h1>AER<a class="headerlink" href="#aer" title="Permalink to this headline">¶</a></h1>
+<p><strong>path</strong>: <code class="docutils literal notranslate"><span class="pre">orion.primitives.aer.AER</span></code></p>
+<p><strong>description</strong>: this an autoencoder-based model capable of creating both prediction-based and reconstruction-based anomaly scores.</p>
+<p>see <a class="reference external" href="https://github.com/sintel-dev/Orion/tree/master/orion/primitives/jsons/orion.primitives.aer.AER.json">json</a>.</p>
+<table class="table">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 10%" />
+<col style="width: 77%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>argument</p></td>
+<td><p>type</p></td>
+<td><p>description</p></td>
+</tr>
+<tr class="row-even"><td colspan="3"><p><strong>parameters</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">X</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">numpy.ndarray</span></code></p></td>
+<td><p>n-dimensional array containing the input sequences for the model</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">numpy.ndarray</span></code></p></td>
+<td><p>n-dimensional array containing the target sequences we want to reconstruct. Typically <code class="docutils literal notranslate"><span class="pre">y</span></code> is a signal from a selected set of channels from <code class="docutils literal notranslate"><span class="pre">X</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td colspan="3"><p><strong>hyperparameters</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">epochs</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">int</span></code></p></td>
+<td><p>number of epochs to train the model. An epoch is an iteration over the entire X data provided</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">input_shape</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">tuple</span></code></p></td>
+<td><p>tuple denoting the shape of an input sample</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">optimizer</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">str</span></code></p></td>
+<td><p>string (name of optimizer) or optimizer instance. Default is <code class="docutils literal notranslate"><span class="pre">keras.optimizers.Adam</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">learning_rate</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">float</span></code></p></td>
+<td><p>float denoting the learning rate of the optimizer. Default is 0.001</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">batch_size</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">int</span></code></p></td>
+<td><p>number of samples per gradient update. Default is 64</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">layers_encoder</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">list</span></code></p></td>
+<td><p>list containing layers of encoder</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">layers_generator</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">list</span></code></p></td>
+<td><p>list containing layers of generator</p></td>
+</tr>
+<tr class="row-odd"><td colspan="3"><p><strong>output</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ry_hat</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">numpy.ndarray</span></code></p></td>
+<td><p>n-dimensional array containing the regression for each input sequence (reverse)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">y_hat</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">numpy.ndarray</span></code></p></td>
+<td><p>n-dimensional array containing the reconstructions for each input sequence</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">fy_hat</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">numpy.ndarray</span></code></p></td>
+<td><p>n-dimensional array containing the regression for each input sequence (forward)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [1]: </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="gp">In [2]: </span><span class="kn">from</span> <span class="nn">mlstars</span> <span class="kn">import</span> <span class="n">load_primitive</span>
+
+<span class="gp">In [3]: </span><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">64</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+<span class="gp">In [4]: </span><span class="n">y</span> <span class="o">=</span> <span class="n">X</span><span class="p">[:,:,</span> <span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="c1"># signal to reconstruct from X (channel 0)</span>
+
+<span class="gp">In [5]: </span><span class="n">primitive</span> <span class="o">=</span> <span class="n">load_primitive</span><span class="p">(</span><span class="s1">&#39;orion.primitives.aer.AER&#39;</span><span class="p">,</span>
+<span class="gp">   ...: </span>    <span class="n">arguments</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;X&quot;</span><span class="p">:</span> <span class="n">X</span><span class="p">,</span> <span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="n">y</span><span class="p">,</span> <span class="s2">&quot;epochs&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;batch_size&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">})</span>
+<span class="gp">   ...: </span>
+
+<span class="gp">In [6]: </span><span class="n">primitive</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+
+<span class="go"> 1/51 [..............................] - ETA: 3:05 - loss: 0.9735 - tf.__operators__.getitem_loss: 1.0550 - tf.__operators__.getitem_1_loss: 0.9536 - tf.__operators__.getitem_2_loss: 0.9316</span>
+<span class="go"> 4/51 [=&gt;............................] - ETA: 1s - loss: 0.6584 - tf.__operators__.getitem_loss: 0.7921 - tf.__operators__.getitem_1_loss: 0.5815 - tf.__operators__.getitem_2_loss: 0.6785  </span>
+<span class="go"> 7/51 [===&gt;..........................] - ETA: 0s - loss: 0.4450 - tf.__operators__.getitem_loss: 0.5825 - tf.__operators__.getitem_1_loss: 0.3566 - tf.__operators__.getitem_2_loss: 0.4842</span>
+<span class="go">10/51 [====&gt;.........................] - ETA: 0s - loss: 0.3347 - tf.__operators__.getitem_loss: 0.4296 - tf.__operators__.getitem_1_loss: 0.2797 - tf.__operators__.getitem_2_loss: 0.3498</span>
+<span class="go">13/51 [======&gt;.......................] - ETA: 0s - loss: 0.2898 - tf.__operators__.getitem_loss: 0.3334 - tf.__operators__.getitem_1_loss: 0.2782 - tf.__operators__.getitem_2_loss: 0.2694</span>
+<span class="go">16/51 [========&gt;.....................] - ETA: 0s - loss: 0.2558 - tf.__operators__.getitem_loss: 0.2748 - tf.__operators__.getitem_1_loss: 0.2642 - tf.__operators__.getitem_2_loss: 0.2202</span>
+<span class="go">19/51 [==========&gt;...................] - ETA: 0s - loss: 0.2252 - tf.__operators__.getitem_loss: 0.2402 - tf.__operators__.getitem_1_loss: 0.2348 - tf.__operators__.getitem_2_loss: 0.1912</span>
+<span class="go">22/51 [===========&gt;..................] - ETA: 0s - loss: 0.2019 - tf.__operators__.getitem_loss: 0.2209 - tf.__operators__.getitem_1_loss: 0.2053 - tf.__operators__.getitem_2_loss: 0.1761</span>
+<span class="go">25/51 [=============&gt;................] - ETA: 0s - loss: 0.1852 - tf.__operators__.getitem_loss: 0.2097 - tf.__operators__.getitem_1_loss: 0.1812 - tf.__operators__.getitem_2_loss: 0.1687</span>
+<span class="go">28/51 [===============&gt;..............] - ETA: 0s - loss: 0.1723 - tf.__operators__.getitem_loss: 0.2012 - tf.__operators__.getitem_1_loss: 0.1622 - tf.__operators__.getitem_2_loss: 0.1637</span>
+<span class="go">31/51 [=================&gt;............] - ETA: 0s - loss: 0.1612 - tf.__operators__.getitem_loss: 0.1926 - tf.__operators__.getitem_1_loss: 0.1470 - tf.__operators__.getitem_2_loss: 0.1585</span>
+<span class="go">34/51 [===================&gt;..........] - ETA: 0s - loss: 0.1514 - tf.__operators__.getitem_loss: 0.1831 - tf.__operators__.getitem_1_loss: 0.1353 - tf.__operators__.getitem_2_loss: 0.1521</span>
+<span class="go">37/51 [====================&gt;.........] - ETA: 0s - loss: 0.1430 - tf.__operators__.getitem_loss: 0.1733 - tf.__operators__.getitem_1_loss: 0.1268 - tf.__operators__.getitem_2_loss: 0.1450</span>
+<span class="go">40/51 [======================&gt;.......] - ETA: 0s - loss: 0.1358 - tf.__operators__.getitem_loss: 0.1637 - tf.__operators__.getitem_1_loss: 0.1209 - tf.__operators__.getitem_2_loss: 0.1379</span>
+<span class="go">43/51 [========================&gt;.....] - ETA: 0s - loss: 0.1297 - tf.__operators__.getitem_loss: 0.1552 - tf.__operators__.getitem_1_loss: 0.1161 - tf.__operators__.getitem_2_loss: 0.1315</span>
+<span class="go">46/51 [==========================&gt;...] - ETA: 0s - loss: 0.1243 - tf.__operators__.getitem_loss: 0.1480 - tf.__operators__.getitem_1_loss: 0.1116 - tf.__operators__.getitem_2_loss: 0.1261</span>
+<span class="go">49/51 [===========================&gt;..] - ETA: 0s - loss: 0.1194 - tf.__operators__.getitem_loss: 0.1421 - tf.__operators__.getitem_1_loss: 0.1068 - tf.__operators__.getitem_2_loss: 0.1219</span>
+<span class="go">51/51 [==============================] - 6s 43ms/step - loss: 0.1164 - tf.__operators__.getitem_loss: 0.1388 - tf.__operators__.getitem_1_loss: 0.1036 - tf.__operators__.getitem_2_loss: 0.1197 - val_loss: 0.0430 - val_tf.__operators__.getitem_loss: 0.0624 - val_tf.__operators__.getitem_1_loss: 0.0207 - val_tf.__operators__.getitem_2_loss: 0.0681</span>
+
+<span class="gp">In [7]: </span><span class="n">ry</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">fy</span> <span class="o">=</span> <span class="n">primitive</span><span class="o">.</span><span class="n">produce</span><span class="p">(</span><span class="n">X</span><span class="o">=</span><span class="n">X</span><span class="p">)</span>
+
+<span class="go">1/2 [==============&gt;...............] - ETA: 0s</span>
+<span class="go">2/2 [==============================] - 0s 9ms/step</span>
+
+<span class="go">1/2 [==============&gt;...............] - ETA: 0s</span>
+<span class="go">2/2 [==============================] - 0s 11ms/step</span>
+
+<span class="gp">In [8]: </span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Reverse Prediction: </span><span class="si">{}</span><span class="se">\n</span><span class="s2">Reconstructed Values: </span><span class="si">{}</span><span class="s2">, Forward Prediction: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ry</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">fy</span><span class="p">))</span>
+<span class="go">Reverse Prediction: [[0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]</span>
+<span class="go"> [0.75023392]]</span>
+<span class="go">Reconstructed Values: [[[0.86244282]</span>
+<span class="go">  [0.94520885]</span>
+<span class="go">  [1.00560893]</span>
+<span class="go">  ...</span>
+<span class="go">  [1.0034647 ]</span>
+<span class="go">  [0.94382771]</span>
+<span class="go">  [0.85920076]]</span>
+
+<span class="go"> [[0.86244282]</span>
+<span class="go">  [0.94520885]</span>
+<span class="go">  [1.00560893]</span>
+<span class="go">  ...</span>
+<span class="go">  [1.0034647 ]</span>
+<span class="go">  [0.94382771]</span>
+<span class="go">  [0.85920076]]</span>
+
+<span class="go"> [[0.86244282]</span>
+<span class="go">  [0.94520885]</span>
+<span class="go">  [1.00560893]</span>
+<span class="go">  ...</span>
+<span class="go">  [1.0034647 ]</span>
+<span class="go">  [0.94382771]</span>
+<span class="go">  [0.85920076]]</span>
+
+<span class="go"> ...</span>
+
+<span class="go"> [[0.86244282]</span>
+<span class="go">  [0.94520885]</span>
+<span class="go">  [1.00560893]</span>
+<span class="go">  ...</span>
+<span class="go">  [1.0034647 ]</span>
+<span class="go">  [0.94382771]</span>
+<span class="go">  [0.85920076]]</span>
+
+<span class="go"> [[0.86244282]</span>
+<span class="go">  [0.94520885]</span>
+<span class="go">  [1.00560893]</span>
+<span class="go">  ...</span>
+<span class="go">  [1.0034647 ]</span>
+<span class="go">  [0.94382771]</span>
+<span class="go">  [0.85920076]]</span>
+
+<span class="go"> [[0.86244282]</span>
+<span class="go">  [0.94520885]</span>
+<span class="go">  [1.00560893]</span>
+<span class="go">  ...</span>
+<span class="go">  [1.0034647 ]</span>
+<span class="go">  [0.94382771]</span>
+<span class="go">  [0.85920076]]], Forward Prediction: [[0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]</span>
+<span class="go"> [0.73901214]]</span>
+</pre></div>
+</div>
+</section>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="TadGAN.html" title="previous page">TadGAN</a>
+    <a class='right-next' id="next-link" href="VAE.html" title="next page">VAE</a>
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+
+    
+  <script src="../../../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    <p>
+          &copy; Copyright 2018, MIT Data To AI Lab.<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

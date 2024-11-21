@@ -4,11 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Evaluation &#8212; Orion 0.2.1.dev0 documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Evaluation &#8212; Orion 0.6.2.dev0 documentation</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -20,12 +20,16 @@
 
     
       
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" href="../_static/css/blank.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -39,90 +43,63 @@
     <link rel="next" title="Benchmarking" href="benchmarking.html" />
     <link rel="prev" title="Pipelines" href="primitives_pipelines/pipelines.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+    <meta name="docsearch:language" content="en" />
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
-    <div class="container-fluid" id="banner"></div>
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
+<div class="container-xl">
 
+    <a class="navbar-brand" href="../index.html">
     
-    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
-
-  <div id="navbar-start">
+      <p class="title">Orion</p>
     
-    
-<a class="navbar-brand" href="../index.html">
-<p class="title">Orion</p>
-</a>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-    
-  </div>
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  
-  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
-    <div id="navbar-center" class="mr-auto">
-      
-      <div class="navbar-center-item">
-        <ul id="navbar-main-elements" class="navbar-nav">
-    <li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../getting_started/index.html">
-  Getting Started
- </a>
-</li>
-
-<li class="toctree-l1 current active nav-item">
- <a class="reference internal nav-link" href="index.html">
-  User Guides
- </a>
-</li>
-
-<li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../api_reference/index.html">
-  API Reference
- </a>
-</li>
-
-<li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../developer_guides/index.html">
-  Developer Guides
- </a>
-</li>
-
-<li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../history.html">
-  Release Notes
- </a>
-</li>
-
-    
-</ul>
-      </div>
-      
-    </div>
-
-    <div id="navbar-end">
-      
-      <div class="navbar-end-item">
-        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/signals-dev/Orion" rel="noopener" target="_blank" title="GitHub">
-            <span><i class="fab fa-github-square"></i></span>
-            <label class="sr-only">GitHub</label>
-          </a>
+    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+        
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../getting_started/index.html">Getting Started</a>
         </li>
+        
+        <li class="nav-item active">
+            <a class="nav-link" href="index.html">User Guides</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../api_reference/index.html">API Reference</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../developer_guides/index.html">Developer Guides</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../history.html">Release Notes</a>
+        </li>
+        
+        
       </ul>
-      </div>
+
+
       
+
+      <ul class="navbar-nav">
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/sintel-dev/Orion" target="_blank" rel="noopener">
+              <span><i class="fab fa-github-square"></i></span>
+            </a>
+          </li>
+        
+        
+      </ul>
     </div>
-  </div>
 </div>
     </nav>
     
@@ -130,232 +107,114 @@
     <div class="container-xl">
       <div class="row">
           
-            
-            <!-- Only show if we have sidebars configured, else just a small margin  -->
-            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+          <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  <div class="bd-toc-item active">
-    <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="data.html">
-   Data
-  </a>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="primitives_pipelines/index.html">
-   Primitives and Pipelines
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="primitives_pipelines/primitives.html">
-     Primitives
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-    <label for="toctree-checkbox-2">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives_pipelines/primitives/time_segments_aggregate.html">
-       time segments aggregate
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives_pipelines/primitives/intervals_to_mask.html">
-       intervals to mask
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives_pipelines/primitives/rolling_window_sequences.html">
-       rolling window sequence
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives_pipelines/primitives/fillna.html">
-       fillna
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives_pipelines/primitives/SimpleImputer.html">
-       SimpleImputer
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives_pipelines/primitives/MinMaxScaler.html">
-       MinMaxScaler
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives_pipelines/primitives/arima.html">
-       ARIMA
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives_pipelines/primitives/LSTMTimeSeriesRegressor.html">
-       LSTM
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives_pipelines/primitives/LSTMSeq2Seq.html">
-       LSTM AE
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives_pipelines/primitives/DenseSeq2Seq.html">
-       Dense AE
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives_pipelines/primitives/TadGAN.html">
-       TadGAN
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives_pipelines/primitives/score_anomalies.html">
-       score anomalies
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives_pipelines/primitives/reconstruction_errors.html">
-       reconstuction errors
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives_pipelines/primitives/regression_errors.html">
-       regression errors
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="primitives_pipelines/primitives/find_anomalies.html">
-       find anomalies
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="primitives_pipelines/pipelines.html">
-     Pipelines
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Evaluation
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="benchmarking.html">
-   Benchmarking
-  </a>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="system/index.html">
-   Building a System
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="system/database.html">
-     Database Schema
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="system/api.html">
-     API
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="system/interface.html">
-     User Interface
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
 
-  </div>
-</nav>
-            </div>
+    <div class="bd-toc-item active">
+    
+  
+    <ul class="nav bd-sidenav">
+        
+        
+        
+        
+          
             
+                <li class="">
+                    <a href="data.html">Data</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="primitives_pipelines/index.html">Primitives and Pipelines</a>
+                </li>
+            
+          
+            
+                <li class="active">
+                    <a href="">Evaluation</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="benchmarking.html">Benchmarking</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="system/index.html">Building a System</a>
+                </li>
+            
+          
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+  
+  </nav>
+          </div>
           
 
           
           <div class="d-none d-xl-block col-xl-2 bd-toc">
-            
               
-              <div class="toc-item">
-                
 <div class="tocsection onthispage pt-5 pb-3">
     <i class="fas fa-list"></i> On this page
 </div>
 
 <nav id="bd-toc-nav">
-    <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#types-of-anomalies">
-   Types of anomalies
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#how-do-we-score-anomalies">
-   How do we score anomalies?
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#weighted-segment">
-     Weighted segment
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#overlapping-segment">
-     Overlapping segment
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#evaluate-the-performance-of-your-pipeline">
-   Evaluate the performance of your pipeline
-  </a>
- </li>
-</ul>
-
-</nav>
-              </div>
-              
-              <div class="toc-item">
+    <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#types-of-anomalies" class="nav-link">Types of anomalies</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#how-do-we-score-anomalies" class="nav-link">How do we score anomalies?</a><ul class="nav section-nav flex-column">
                 
-              </div>
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#weighted-segment" class="nav-link">Weighted segment</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#overlapping-segment" class="nav-link">Overlapping segment</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#evaluate-the-performance-of-your-pipeline" class="nav-link">Evaluate the performance of your pipeline</a>
+        </li>
+    
+    </ul>
+</nav>
+
+
               
-            
           </div>
           
 
-          
-          
-            
           
           <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
               
               <div>
                 
-  <div class="section" id="evaluation">
+  <section id="evaluation">
 <span id="evaluation-doc"></span><h1>Evaluation<a class="headerlink" href="#evaluation" title="Permalink to this headline">¶</a></h1>
 <p>When evaluating a pipeline, we rely on two main arguments: <em>known anomalies</em>, and <em>detected anomalies</em>.</p>
-<div class="section" id="types-of-anomalies">
+<section id="types-of-anomalies">
 <h2>Types of anomalies<a class="headerlink" href="#types-of-anomalies" title="Permalink to this headline">¶</a></h2>
 <p>There are two approaches to defined anomalies:</p>
 <ul class="simple">
@@ -374,9 +233,9 @@
 </div>
 <p>We have created an evaluator for both types.
 We also provide a suite of transformation functions in <code class="docutils literal notranslate"><span class="pre">utils.py</span></code> to help with converting one type to another.</p>
-<p>View the <a class="reference external" href="https://github.com/signals-dev/Orion/tree/master/orion/evaluation">Evaluation sub-package</a> to see the metrics provided in <strong>Orion</strong>.</p>
-</div>
-<div class="section" id="how-do-we-score-anomalies">
+<p>View the <a class="reference external" href="https://github.com/sintel-dev/Orion/tree/master/orion/evaluation">Evaluation sub-package</a> to see the metrics provided in <strong>Orion</strong>.</p>
+</section>
+<section id="how-do-we-score-anomalies">
 <h2>How do we score anomalies?<a class="headerlink" href="#how-do-we-score-anomalies" title="Permalink to this headline">¶</a></h2>
 <p>We use two main approaches to compare detected anomalies with the ground truth:</p>
 <ol class="arabic simple">
@@ -416,7 +275,7 @@ We also provide a suite of transformation functions in <code class="docutils lit
 </pre></div>
 </div>
 <p>So, what is the score?</p>
-<div class="section" id="weighted-segment">
+<section id="weighted-segment">
 <h3>Weighted segment<a class="headerlink" href="#weighted-segment" title="Permalink to this headline">¶</a></h3>
 <p>Weighted segment based evaluation is a strict approach which weighs each segment by its actual time duration. It is valuable to use when you want to detect the exact segment of the anomaly, without any slackness. It first segments the signal into partitions based on the ground truth and detected sequences. Then it makes a segment to segment comparison and records true positive, true negative, false positive, and false negative accordingly. The overall score is weighted by the duration of each segment.</p>
 <div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [4]: </span><span class="kn">from</span> <span class="nn">orion.evaluation.contextual</span> <span class="kn">import</span> <span class="n">contextual_f1_score</span>
@@ -427,8 +286,8 @@ We also provide a suite of transformation functions in <code class="docutils lit
 <span class="gh">Out[6]: </span><span class="go">0.12184891031572705</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="overlapping-segment">
+</section>
+<section id="overlapping-segment">
 <h3>Overlapping segment<a class="headerlink" href="#overlapping-segment" title="Permalink to this headline">¶</a></h3>
 <p>We look for overlap between detected anomalies and ground truth anomalies.</p>
 <p>In this methodology, we are more concerned with whether or not we were able to find an anomaly; even just a part of it. It records:</p>
@@ -442,10 +301,10 @@ We also provide a suite of transformation functions in <code class="docutils lit
 <span class="gh">Out[7]: </span><span class="go">1.0</span>
 </pre></div>
 </div>
-<p>You can read more about our step-by-step process in our evaluation by visiting the <a class="reference external" href="https://github.com/signals-dev/Orion/tree/master/orion/evaluation">Evaluation sub-package</a></p>
-</div>
-</div>
-<div class="section" id="evaluate-the-performance-of-your-pipeline">
+<p>You can read more about our step-by-step process in our evaluation by visiting the <a class="reference external" href="https://github.com/sintel-dev/Orion/tree/master/orion/evaluation">Evaluation sub-package</a></p>
+</section>
+</section>
+<section id="evaluate-the-performance-of-your-pipeline">
 <h2>Evaluate the performance of your pipeline<a class="headerlink" href="#evaluate-the-performance-of-your-pipeline" title="Permalink to this headline">¶</a></h2>
 <p>We can use the same dataset we saw in the <a class="reference internal" href="../getting_started/quickstart.html#quickstart"><span class="std std-ref">Quickstart</span></a></p>
 <div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [8]: </span><span class="kn">from</span> <span class="nn">orion.data</span> <span class="kn">import</span> <span class="n">load_signal</span>
@@ -477,7 +336,7 @@ We also provide a suite of transformation functions in <code class="docutils lit
 <span class="gp">In [14]: </span><span class="n">ground_truth</span> <span class="o">=</span> <span class="n">load_anomalies</span><span class="p">(</span><span class="s1">&#39;S-1&#39;</span><span class="p">)</span>
 
 <span class="gp">In [15]: </span><span class="n">ground_truth</span>
-<span class="gh">Out[15]: </span><span class="go"></span>
+<span class="gh">Out[15]: </span>
 <span class="go">        start         end</span>
 <span class="go">0  1398168000  1407823200</span>
 </pre></div>
@@ -493,61 +352,44 @@ We also provide a suite of transformation functions in <code class="docutils lit
 </div>
 <p>The output will be a <code class="docutils literal notranslate"><span class="pre">pandas.Series</span></code> containing a collection of scores indicating how the predictions were:</p>
 <div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [17]: </span><span class="n">scores</span>
-<span class="gh">Out[17]: </span><span class="go"></span>
-<span class="go">accuracy     0.950138</span>
-<span class="go">f1                NaN</span>
-<span class="go">recall       0.000000</span>
-<span class="go">precision    0.000000</span>
+<span class="gh">Out[17]: </span>
+<span class="go">accuracy     0.966693</span>
+<span class="go">f1           0.495522</span>
+<span class="go">recall       0.371365</span>
+<span class="go">precision    0.744395</span>
 <span class="go">dtype: float64</span>
 </pre></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
               </div>
               
               
-              <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="primitives_pipelines/pipelines.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Pipelines</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="benchmarking.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Benchmarking</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
-</div>
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="primitives_pipelines/pipelines.html" title="previous page">Pipelines</a>
+    <a class='right-next' id="next-link" href="benchmarking.html" title="next page">Benchmarking</a>
+
+              </div>
               
           </main>
           
 
       </div>
     </div>
-  
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
-<footer class="footer mt-5 mt-md-0">
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    <footer class="footer mt-5 mt-md-0">
   <div class="container">
-    
-    <div class="footer-item">
-      <p class="copyright">
-    &copy; Copyright 2018, MIT Data To AI Lab.<br>
-</p>
-    </div>
-    
-    <div class="footer-item">
-      <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br>
-</p>
-    </div>
-    
+    <p>
+          &copy; Copyright 2018, MIT Data To AI Lab.<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br/>
+    </p>
   </div>
 </footer>
   </body>

@@ -7,7 +7,7 @@ TadGAN
 
 **description**: this is a reconstruction model, namely Generative Adversarial Networks (GAN), containing multiple neural networks and cycle consistency loss. the proposed model is described in the `related paper <https://arxiv.org/pdf/2009.07769.pdf>`__.
 
-see `json <https://github.com/signals-dev/Orion/tree/master/orion/primitives/jsons/orion.primitives.tadgan.TadGAN.json>`__.
+see `json <https://github.com/sintel-dev/Orion/tree/master/orion/primitives/jsons/orion.primitives.tadgan.TadGAN.json>`__.
 
 ========================== =================== =================================================================================================
 argument                    type                description  
@@ -44,7 +44,7 @@ argument                    type                description
     :okwarning:
 
     import numpy as np
-    from mlprimitives import load_primitive
+    from mlstars import load_primitive
 
     X = np.array([1] * 100).reshape(1, -1, 1)
     y = X[:,:, [0]] # signal to reconstruct from X (channel 0)

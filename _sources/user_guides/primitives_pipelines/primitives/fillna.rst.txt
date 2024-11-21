@@ -7,7 +7,7 @@ fillna
 
 **description**: this primitive is an iterative imputation transformer for filling missing values using ``pandas.fillna``.
 
-see `json <https://github.com/signals-dev/Orion/blob/master/orion/primitives/jsons/orion.primitives.timeseries_preprocessing.fillna.json>`__.
+see `json <https://github.com/sintel-dev/Orion/blob/master/orion/primitives/jsons/orion.primitives.timeseries_preprocessing.fillna.json>`__.
 
 ================== =============================================================== ============================================
 argument            type                                                            description  
@@ -35,7 +35,7 @@ argument            type                                                        
     :okwarning:
 
     import numpy as np
-    from mlprimitives import load_primitive
+    from mlstars import load_primitive
 
     X = np.array([1] * 4 + [np.nan]).reshape(-1, 1)
     primitive = load_primitive('orion.primitives.timeseries_preprocessing.fillna', 
