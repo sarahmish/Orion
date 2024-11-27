@@ -1,0 +1,36 @@
+{
+    "name": "numpy.squeeze",
+    "contributors": [
+        "Sarah Alnegheimish <smish@mit.edu>"
+    ],
+    "documentation": "https://docs.scipy.org/doc/numpy/reference/generated/numpy.squeeze.html",
+    "description": "Gives a new shape to an array without changing its data.",
+    "classifiers": {
+        "type": "helper"
+    },
+    "modalities": [],
+    "primitive": "numpy.squeeze",
+    "produce": {
+        "args": [
+            {
+                "name": "y",
+                "keyword": "a",
+                "type": "ndarray"
+            }
+        ],
+        "output": [
+            {
+                "name": "y",
+                "type": "ndarray"
+            }
+        ]
+    },
+    "hyperparameters": {
+        "fixed": {
+            "axis": {
+                "type": "int",
+                "default": 0
+            }
+        }
+    }
+}

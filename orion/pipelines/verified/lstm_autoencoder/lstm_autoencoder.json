@@ -5,7 +5,7 @@
         "sklearn.preprocessing.MinMaxScaler",
         "mlstars.custom.timeseries_preprocessing.rolling_window_sequences",
         "orion.primitives.timeseries_preprocessing.slice_array_by_dims",
-        "keras.Sequential.LSTMSeq2Seq",
+        "mod.keras.Sequential.LSTMSeq2Seq",
         "orion.primitives.timeseries_errors.reconstruction_errors",
         "orion.primitives.timeseries_anomalies.find_anomalies"
     ],
@@ -26,7 +26,7 @@
             "target_index": 0,
             "axis": 2
         },
-        "keras.Sequential.LSTMSeq2Seq#1": {
+        "mod.keras.Sequential.LSTMSeq2Seq#1": {
             "epochs": 35,
             "verbose": false,
             "window_size": 100,
@@ -40,7 +40,7 @@
         }
     },
     "output_names": {
-        "keras.Sequential.LSTMSeq2Seq#1": {
+        "mod.keras.Sequential.LSTMSeq2Seq#1": {
             "y": "y_hat"
         },
         "mlstars.custom.timeseries_preprocessing.rolling_window_sequences#1": {

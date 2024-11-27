@@ -4,7 +4,8 @@
         "sklearn.impute.SimpleImputer",
         "sklearn.preprocessing.MinMaxScaler",
         "mlstars.custom.timeseries_preprocessing.rolling_window_sequences",
-        "keras.Sequential.LSTMTimeSeriesRegressor",
+        "numpy.squeeze",
+        "mod.keras.Sequential.LSTMTimeSeriesRegressor",
         "orion.primitives.timeseries_errors.regression_errors",
         "orion.primitives.timeseries_anomalies.find_anomalies"
     ],
@@ -24,7 +25,10 @@
             "target_column": 0,
             "window_size": 250
         },
-        "keras.Sequential.LSTMTimeSeriesRegressor": {
+        "numpy.squeeze": {
+            "axis": 1
+        },
+        "mod.keras.Sequential.LSTMTimeSeriesRegressor": {
             "epochs": 35
         },
         "orion.primitives.timeseries_anomalies.find_anomalies#1": {
@@ -39,7 +43,7 @@
         }
     },
     "output_names": {
-        "keras.Sequential.LSTMTimeSeriesRegressor#1": {
+        "mod.keras.Sequential.LSTMTimeSeriesRegressor#1": {
             "y": "y_hat"
         }
     }

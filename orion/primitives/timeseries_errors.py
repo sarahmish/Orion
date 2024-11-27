@@ -38,18 +38,22 @@ def regression_errors(y, y_hat, smoothing_window=0.01, smooth=True,
         ndarray:
             Array of errors.
     """
-    errors = np.abs(y - y_hat)[:, 0]
+    assert y.shape == y_hat.shape, "predicted signal and actual signal shapes do not match"
+
+    errors = np.abs(y - y_hat)
 
     if not smooth:
-        return errors
+        return errors.flatten()
 
     smoothing_window = max(1, int(len(y) * smoothing_window))
-    errors = pd.Series(errors).ewm(span=smoothing_window).mean().values
+    errors = pd.DataFrame(errors).apply(lambda x: x.ewm(span=smoothing_window).mean().values)
+    errors = errors.sum(axis=1).values
 
     if mask:
         mask_length = int(masking_window * len(errors))
         errors[:mask_length] = min(errors)
-    return errors
+
+    return errors.flatten()
 
 
 def _point_wise_error(y, y_hat):
@@ -60,15 +64,22 @@ def _point_wise_error(y, y_hat):
 
     Args:
         y (ndarray):
-            Ground truth.
+            Ground truth. Shape can be (n_samples,) for univariate 
+            or (n_samples, n_features) for multivariate.
         y_hat (ndarray):
-            Predicted values.
+            Predicted values. Shape must match y.
 
     Returns:
         ndarray:
             An array of smoothed point-wise error.
     """
-    return abs(y - y_hat)
+    # Convert 1D arrays to 2D
+    if y.ndim == 1:
+        y = y.reshape(-1, 1)
+    if y_hat.ndim == 1:
+        y_hat = y_hat.reshape(-1, 1)
+        
+    return abs(y - y_hat).sum(axis=1).flatten()
 
 
 def _area_error(y, y_hat, score_window=10):
@@ -90,14 +101,14 @@ def _area_error(y, y_hat, score_window=10):
         ndarray:
             An array of area error.
     """
-    smooth_y = pd.Series(y).rolling(
-        score_window, center=True, min_periods=score_window // 2).apply(integrate.trapz)
-    smooth_y_hat = pd.Series(y_hat).rolling(
-        score_window, center=True, min_periods=score_window // 2).apply(integrate.trapz)
+    smooth_y = pd.DataFrame(y).apply(lambda x: x.rolling(
+        score_window, center=True, min_periods=score_window // 2).apply(integrate.trapz))
+    smooth_y_hat = pd.DataFrame(y_hat).apply(lambda x: x.rolling(
+        score_window, center=True, min_periods=score_window // 2).apply(integrate.trapz))
 
-    errors = abs(smooth_y - smooth_y_hat)
+    errors = abs(smooth_y - smooth_y_hat).sum(axis=1).values
 
-    return errors
+    return errors.flatten()
 
 
 def _dtw_error(y, y_hat, score_window=10):
@@ -182,13 +193,14 @@ def reconstruction_errors(y, y_hat, step_size=1, score_window=10, smoothing_wind
     if isinstance(smoothing_window, float):
         smoothing_window = min(math.trunc(len(y) * smoothing_window), 200)
 
-    true = [item[0] for item in y.reshape((y.shape[0], -1))]
+    true = [item[0] for item in y]
     for item in y[-1][1:]:
-        true.extend(item)
+        true.append(item)
+    
+    true = np.array(true)
+    print("true shape = {}".format(true.shape))
 
     predictions = []
-    predictions_vs = []
-
     pred_length = y_hat.shape[1]
     num_errors = y_hat.shape[1] + step_size * (y_hat.shape[0] - 1)
 
@@ -197,19 +209,13 @@ def reconstruction_errors(y, y_hat, step_size=1, score_window=10, smoothing_wind
         for j in range(max(0, i - num_errors + pred_length), min(i + 1, pred_length)):
             intermediate.append(y_hat[i - j, j])
         if intermediate:
-            predictions.append(np.median(np.asarray(intermediate)))
+            intermediate = np.asarray(intermediate)
+            if intermediate.ndim == 1:
+                predictions.append(np.median(intermediate))
+            else:
+                predictions.append(np.median(intermediate, axis=0))
 
-            predictions_vs.append([[
-                np.min(np.asarray(intermediate)),
-                np.percentile(np.asarray(intermediate), 25),
-                np.percentile(np.asarray(intermediate), 50),
-                np.percentile(np.asarray(intermediate), 75),
-                np.max(np.asarray(intermediate))
-            ]])
-
-    true = np.asarray(true)
     predictions = np.asarray(predictions)
-    predictions_vs = np.asarray(predictions_vs)
 
     # Compute reconstruction errors
     if rec_error_type.lower() == "point":
@@ -218,12 +224,9 @@ def reconstruction_errors(y, y_hat, step_size=1, score_window=10, smoothing_wind
     elif rec_error_type.lower() == "area":
         errors = _area_error(true, predictions, score_window)
 
-    elif rec_error_type.lower() == "dtw":
-        errors = _dtw_error(true, predictions, score_window)
-
     # Apply smoothing
     if smooth:
         errors = pd.Series(errors).rolling(
             smoothing_window, center=True, min_periods=smoothing_window // 2).mean().values
 
-    return errors, predictions_vs
+    return errors, predictions

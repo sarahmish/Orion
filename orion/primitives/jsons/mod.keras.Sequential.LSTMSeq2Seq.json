@@ -1,5 +1,5 @@
 {
-    "name": "keras.Sequential.LSTMSeq2Seq",
+    "name": "mod.keras.Sequential.LSTMSeq2Seq",
     "contributors": [
         "Dongyu Liu <dongyu@mit.edu>",
         "Sarah Alnegheimish <smish@mit.edu>"
@@ -10,7 +10,7 @@
         "subtype": "regressor"
     },
     "modalities": [],
-    "primitive": "mlstars.adapters.keras.Sequential",
+    "primitive": "orion.primitives.adapters.keras.Sequential",
     "fit": {
         "method": "fit",
         "args": [
@@ -86,6 +86,11 @@
                 "description": "Shape of target",
                 "default": [250, 1]
             },
+            "dense_units": {
+                "type": "int",
+                "description": "Number of channels to predict",
+                "default": 1
+            },
             "optimizer": {
                 "type": "str",
                 "default": "tensorflow.keras.optimizers.Adam"
@@ -137,7 +142,7 @@
                             "layer": {
                                 "class": "tensorflow.keras.layers.Dense",
                                 "parameters": {
-                                    "units": 1
+                                    "units": "dense_units"
                                 }
                             }
                         }
