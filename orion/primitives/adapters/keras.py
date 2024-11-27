@@ -98,10 +98,12 @@ class Sequential(object):
         self._setdefault(kwargs, '{}_length'.format(mode), length)
 
         if mode == 'target' and 'dense_units' in self.hyperparameters:
-            if len(shape) == 1:
+            if len(shape) == 2:
+                kwargs['dense_units'] = shape[1]
+            elif len(shape) == 1:
                 kwargs['dense_units'] = shape[0]
             else:
-                kwargs['dense_units'] = shape[1]
+                kwargs['dense_units'] = 1
         
         self.kwargs = kwargs
         return kwargs

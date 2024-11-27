@@ -38,6 +38,11 @@ def regression_errors(y, y_hat, smoothing_window=0.01, smooth=True,
         ndarray:
             Array of errors.
     """
+    if y.ndim == 1:
+        y = y.reshape(-1, 1)
+    if y_hat.ndim == 1:
+        y_hat = y_hat.reshape(-1, 1)
+        
     assert y.shape == y_hat.shape, "predicted signal and actual signal shapes do not match"
 
     errors = np.abs(y - y_hat)
