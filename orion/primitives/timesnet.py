@@ -25,38 +25,11 @@ import torch.fft
 from mlstars.utils import import_object
 from torch.utils.data import DataLoader
 
-from orion.primitives.anomaly_transformer import TokenEmbedding, PositionalEncoding
+from orion.primitives.anomaly_transformer import Signal, TokenEmbedding, PositionalEncoding
 from orion.primitives.timeseries_anomalies import _merge_sequences, _prune_anomalies
 
 LOGGER = logging.getLogger(__name__)
 
-
-class Signal(object):
-    """Data object.
-
-    Args:
-        X (ndarray):
-            An n-dimensional array of signal values.
-        window_size (int):
-            Size of the window.
-        step (int):
-            Stride size.
-    """
-
-    def __init__(self, X, window_size, step=1, mode='train'):
-        self.data = X
-        self.step = step
-        self.mode = mode
-        self.window_size = window_size
-
-    def __len__(self):
-        return (self.data.shape[0] - self.window_size) // self.step + 1
-
-    def __getitem__(self, index):
-        start = index * self.step
-        end = start + self.window_size
-
-        return np.float32(self.data[start: end])
 
 class FixedEmbedding(nn.Module):
     def __init__(self, c_in, d_model):
@@ -415,6 +388,7 @@ class TimesNet():
         for i, input_data in enumerate(data_loader):
             x = input_data.to(self.device)
             output = self.model(x)
+            print(output.shape)
             
             score = torch.mean(self.criterion(x, output), dim=-1)
             score = score.detach().cpu().numpy()
