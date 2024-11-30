@@ -388,9 +388,8 @@ class TimesNet():
         for i, input_data in enumerate(data_loader):
             x = input_data.to(self.device)
             output = self.model(x)
-            print(output.shape)
             
-            score = torch.mean(self.criterion(x, output), dim=-1)
+            score = torch.mean(self.mse(x, output), dim=-1)
             score = score.detach().cpu().numpy()
             energy.append(score)
             
