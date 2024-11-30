@@ -1,0 +1,22 @@
+{
+    "mlstars.custom.timeseries_preprocessing.time_segments_aggregate#1": {
+        "time_column": "timestamp",
+        "interval": 21600
+    },
+    "orion.primitives.timesnet.TimesNet#1": {
+        "input_size": 55,
+        "output_size": 55,
+        "window_size": 100,
+        "pred_len": 0,
+        "d_model": 8,
+        "d_ff": 16,
+        "num_layers": 1,
+        "top_k": 3,
+        "batch_size": 128,
+        "epochs": 1,
+        "features": "M"
+    },
+    "orion.primitives.anomaly_transformer.threshold_anomalies#1": {
+        "anomaly_ratio": 1.0
+    }
+}
