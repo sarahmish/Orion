@@ -553,12 +553,11 @@ class AnomalyTransformer():
 
 
 def threshold_anomalies(energy, index, train_energy, anomaly_ratio=1.0, min_percent=0.1,
-                        anomaly_padding=50):
+                        prune=True, anomaly_padding=50):
     energy = np.array(energy.reshape(-1))
     train_energy = np.array(train_energy.reshape(-1))
     combined_energy = np.concatenate([train_energy, energy], axis=0)
     thresh = np.percentile(combined_energy, 100 - anomaly_ratio)
-
     anomalies = (energy > thresh).astype(int)
 
     intervals = list()
@@ -573,7 +572,8 @@ def threshold_anomalies(energy, index, train_energy, anomaly_ratio=1.0, min_perc
         idx += length
 
     intervals.sort(key=operator.itemgetter(2), reverse=True)
-    intervals = pd.DataFrame.from_records(intervals, columns=['start', 'stop', 'max_error'])
+    if prune:
+        intervals = pd.DataFrame.from_records(intervals, columns=['start', 'stop', 'max_error'])
+        intervals = _prune_anomalies(intervals, min_percent)
 
-    pruned = _prune_anomalies(intervals, min_percent)
-    return _merge_sequences(pruned)
+    return _merge_sequences(intervals)

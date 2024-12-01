@@ -24,9 +24,37 @@ import torch.nn.functional as F
 from mlstars.utils import import_object
 from torch.utils.data import DataLoader
 
-from orion.primitives.anomaly_transformer import Signal
-
 LOGGER = logging.getLogger(__name__)
+
+class Signal(object):
+    """Data object.
+
+    Args:
+        X (ndarray):
+            An n-dimensional array of signal values.
+        window_size (int):
+            Size of the window.
+        step (int):
+            Stride size.
+    """
+
+    def __init__(self, X, window_size, step=1, mode='train'):
+        self.data = X
+        self.step = step
+        self.mode = mode
+        self.window_size = window_size
+
+    def __len__(self):
+        return (self.data.shape[0] - self.window_size) // self.step + 1
+
+    def __getitem__(self, index):
+        start = index * self.step
+        end = start + self.window_size
+
+        if self.mode == 'train' or self.mode == 'test':
+            return np.float32(self.data[start: end])
+        else:
+            raise ValueError(f'Unknown {self.mode} mode.')
 
 
 class Model(nn.Module):
@@ -131,7 +159,7 @@ class FITS():
 
     def __init__(self, input_size=1, output_size=1, window_size=200, step=1, cut_freq=25, 
                  individual=False, DSR=4, batch_size=1024, learning_rate=1e-4, epochs=10, 
-                 valid_split=0.0, shuffle=True, cuda=True, optimizer="torch.optim.Adam", 
+                 valid_split=0.2, shuffle=True, cuda=True, optimizer="torch.optim.Adam", 
                  verbose=False, output_dir=False):
         
         assert (window_size / DSR) / 2 >= cut_freq, 'cutfreq should be smaller than half of the window size after downsampling'

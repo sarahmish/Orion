@@ -48,6 +48,10 @@
             "anomaly_padding": {
                 "type": "int",
                 "default": 50
+            },
+            "prune": {
+                "type": "bool",
+                "default": true
             }
         }
     }
