@@ -1,0 +1,22 @@
+{
+    "mlstars.custom.timeseries_preprocessing.time_segments_aggregate#1": {
+        "time_column": "timestamp",
+        "interval": 1
+    },
+    "orion.primitives.tfmae.TFMAE#1": {
+        "input_size": 37,
+        "output_size": 37,
+        "window_size": 100,
+        "seq_size": 10,
+        "learning_rate": 1e-4,
+        "batch_size": 64,
+        "epochs": 1,
+        "fr": 0.2,
+        "tr": 0.05,
+        "d_model": 128,
+        "num_layers": 3
+    },
+    "orion.primitives.anomaly_transformer.threshold_anomalies#1": {
+        "anomaly_ratio": 0.45
+    }
+}

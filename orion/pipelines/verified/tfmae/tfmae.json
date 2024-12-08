@@ -1,0 +1,22 @@
+{
+    "primitives": [
+        "mlstars.custom.timeseries_preprocessing.time_segments_aggregate",
+        "orion.primitives.tfmae.TFMAE",
+        "orion.primitives.anomaly_transformer.threshold_anomalies"
+    ],
+    "init_params": {
+        "mlstars.custom.timeseries_preprocessing.time_segments_aggregate#1": {
+            "time_column": "timestamp",
+            "interval": 21600,
+            "method": "mean"
+        },
+        "orion.primitives.tfmae.TFMAE#1": {
+            "epochs": 5,
+            "verbose": true
+        },
+        "orion.primitives.anomaly_transformer.threshold_anomalies#1": {
+            "anomaly_ratio": 1.0,
+            "prune": false
+        }
+    }
+}
